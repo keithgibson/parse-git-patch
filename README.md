@@ -8,6 +8,13 @@
 
 ## Usage
 
+```JavaScript
+// edit: 2024-06-05_12-40-AM had to do the following to get the package to work in an es module:
+ import { createRequire } from 'module';
+ const require = createRequire(import.meta.url);
+ const parseGitPatch = require('parse-git-patch').default;
+```
+
 ```patch
 From 0f6f88c98fff3afa0289f46bf4eab469f45eebc6 Mon Sep 17 00:00:00 2001
 From: A dev <a-dev@users.noreply.github.com>
